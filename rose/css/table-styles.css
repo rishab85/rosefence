@@ -1,0 +1,152 @@
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+@charset "utf-8";
+/* CSS Document */
+
+/* ******** UTILITIES ********** */
+.va-top {vertical-align: top;}
+.va-middle {vertical-align: middle;}
+.va-bottom {vertical-align: bottom;}
+.relative {position: relative;}
+
+/* ******** BASIC TABLE CODE ********** */
+.mytable {display: table;width:100%;position:relative;height:100%;}
+.table-cell {display: table-cell;position:relative;}
+
+/* ******** TABLE HEIGHT ********** */
+.height-100 {height:100vh}
+.height-75 {height:75vh}
+.height-66 {height:66.6vh}
+.height-50 {height:50vh}
+.height-33 {height:33.3vh}
+.height-25 {height:25vh}
+
+
+/* ******** Inner TABLE HEIGHT ********** */
+.mytable .table-cell .height-100 {height:100%}
+.mytable .table-cell .height-75 {height:75%}
+.mytable .table-cell .height-66 {height:66.6%}
+.mytable .table-cell .height-50 {height:50%}
+.mytable .table-cell .height-33 {height:33.3%}
+.mytable .table-cell .height-25 {height:25%}
+
+/* ******** TABLE WIDTH ********** */
+.mytable.width-50-50 .left {width:50%}
+.mytable.width-50-50 .center {display:none;}
+.mytable.width-50-50 .right {width:50%}
+
+.mytable.width-25-75 .left {width:25%}
+.mytable.width-25-75 .center {display:none;}
+.mytable.width-25-75 .right {width:75%}
+
+.mytable.width-75-25 .left {width:75%}
+.mytable.width-75-25 .center {display:none;}
+.mytable.width-75-25 .right {width:25%}
+
+.mytable.width-33-66 .left {width:33.33%}
+.mytable.width-33-66 .center {display:none;}
+.mytable.width-33-66 .right {width:66.66%}
+
+
+.mytable.width-66-33 .left {width:66.66%}
+.mytable.width-66-33 .center {display:none;}
+.mytable.width-66-33 .right {width:33.33%}
+
+
+.mytable.width-25-50-25 .left  {width:25%}
+.mytable.width-25-50-25 .center  {width:50%}
+.mytable.width-25-50-25 .right  {width:25%}
+
+.mytable.width-33-33-33 .left  {width:33.33%}
+.mytable.width-33-33-33 .center  {width:33.33%}
+.mytable.width-33-33-33 .right  {width:33.33%}
+
+
+/* ******** TABLE CONTROL ********** */
+/*.table .left{vertical-align:middle;}  Default */
+/*.table .center{vertical-align:middle;}  Default */
+/*.table .right{vertical-align:middle;}  Default */
+
+
+
+/* ******** OVERLAY ********** */
+.mytable .overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99;
+}
+.overlay-black-95 {background:rgba(0,0,0,.95);}
+.overlay-black-80 {background:rgba(0,0,0,.8);}
+.overlay-black-70 {background:rgba(0,0,0,.7);}
+.overlay-black-60 {background:rgba(0,0,0,.6);}
+.overlay-black-50 {background:rgba(0,0,0,.5);}
+.overlay-black-40 {background:rgba(0,0,0,.4);}
+.overlay-black-30 {background:rgba(0,0,0,.3);}
+.overlay-black-20 {background:rgba(0,0,0,.2);}
+.overlay-white-80 {background:rgba(255,255,255,.8);}
+.overlay-white-70 {background:rgba(255,255,255,.7);}
+.overlay-white-60 {background:rgba(255,255,255,.6);}
+.overlay-white-50 {background:rgba(255,255,255,.5);}
+.overlay-white-40 {background:rgba(255,255,255,.3);}
+.overlay-white-30 {background:rgba(255,255,255,.3);}
+.overlay-white-20 {background:rgba(255,255,255,.2);}
+
+/* ******** OUTER ********** */
+.outer {
+	z-index: 2;
+	position: relative;
+}
+.outer-style-01 {
+}
+.outer-style-02 {
+}
+/* ******** INNER ********** */
+.inner {
+}
+.inner-style-01 {
+}
+
+/* ******** Chevron ********** */
+.chevron{
+	position: absolute;
+	top: 50%;
+	content: '';
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+	z-index: 2;
+}
+.chevron-left{
+	border-right-width: 12px;
+	border-right-style: solid;
+	left: 0;	
+
+	-webkit-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+.chevron-right{
+	border-left-width: 12px;
+	border-left-style: solid;
+	right: 0;
+
+	-webkit-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+
+
+@media only screen and (max-width: 767px) {
+	.mytable,
+	.mytable > .table-cell {display: block;}
+}

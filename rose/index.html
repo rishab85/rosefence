@@ -1,0 +1,840 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Basic Template</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<!-- font icons css -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- scrollbar css -->
+	<link rel="stylesheet" href="css/scrollbar.css">
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- custom css -->
+	<link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/table-styles.css">
+
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+
+  
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
+  <body>
+
+  	<div class="header nav">
+      <!-- inlcuded navigation with query inside this div -->
+      <div class="row">
+        <div class="container">
+          <div class="col-xs-5 col-sm-5 col-md-3 col-lg-3">
+            <img class="logo img-responsive" src="images/logo-dark.png" alt="">
+          </div>
+          <div class="col-xs-7 col-sm-7 col-md-9 col-lg-9">
+            <div class="row">
+              <div class="col-md-12 hidden-xs hidden-sm">
+                 <div class="secondary-nav pull-right">
+                    <ul>
+                      <a href="#"><li>Home</li></a>
+                      <li>|</li>
+                      <a href="#"><li>Contact US</li></a>
+                      <a href="#"><li class="get-quote">GET A QUOTE</li></a>
+                    </ul>
+                  </div>
+              </div>
+                <div class="col-md-12 hidden-xs hidden-sm">
+                  <div class="primary-nav">
+                    <ul class="primary-nav-list pull-right">
+                        <li class="menu-connected about" dropdown="about"><a href="#">About us</a></li>
+                        <li class="menu-connected services-drp" dropdown="services-drp"><a href="#">Services</a></li>
+                        <li class="menu-connected solutions-drp" dropdown="solutions-drp"><a href="#">Solutions</a></li>
+                        <li class="menu-connected gallery-drp" dropdown="gallery-drp"><a href="#">Gallery</a></li>
+                        <li class="last-child menu-connected resources-drp" dropdown="resources-drp"><a href="#">Resources</a></li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+            </div> 
+        </div>
+      </div>
+  	</div>
+
+    <!-- set promotion false to hide --> 
+    
+    <div class="dropdown-wrapper menu-connected about hidden-xs hidden-xs"  id ="about" dropdown="about" promotion="true">
+      <div class="container dropdown">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-3">
+
+                <div class="dropdown-sub-wrap">
+                  <h2>In this section</h2>
+                  <ul class="dropdown-sub">
+                    <li><a href="">Company Information</a></li>
+                    <li><a href="">Our team</a></li>
+                    <li><a href="">Company History</a></li>
+                  </ul>
+                </div>
+
+                 <div class="dropdown-sub-wrap">
+                  <h2>Our Locations</h2>
+                  <ul class="dropdown-sub">
+                    <li><a href="">Customer Testomonials</a></li>
+                    <li><a href="">Project Photos</a></li>
+                    <li><a href="">Ratings & Reviews</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <img src="images/subnav-sample-photo-02.png" class="img-responsive margin-75" alt="">
+              </div>
+              <div class="col-sm-3">
+               <div class="dropdown-sub-wrap">
+                  <h2>Our Customers</h2>
+                  <ul class="dropdown-sub-right">
+                    <li><a href="">Main Office - Freeport, NY <br> Email: info@Rosefence.Com <br>Phone:516-223-0777</a></li>
+                    <li class="divider"></li>
+                    <li><a href="">Glen Head Showroom <br>Email: Info@Rosefence.Com <br>Phone:516-759-6425</a></li>
+                    <li class="divider"></li>
+                    <li><a href="">Huntington Showroom <br>Email:Info@Rosefence.Com <br>Phone: 631-427-7442</a></li>
+                    <li class="divider"></li>
+                    <h4><a href="">View full details ></a></h4>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-sm-12 promotion-wrap" style="padding:0;">
+              <div class="promotion">
+                <span>SALE</span> 30% Off Clearance on all ALUMINUM Fence Installations purchased BEFORE January 1st!
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- services dropdown -->
+
+    <div class="dropdown-wrapper menu-connected services-drp hidden-xs hidden-xs"  id ="services-drp" dropdown="services-drp" promotion="true">
+      <div class="container dropdown">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-3">
+
+                <div class="dropdown-sub-wrap">
+                  <h2>In this section</h2>
+                  <ul class="dropdown-sub">
+                    <li class="img-change" connected-img="vinyl"><a href="">Vinyl Fecing</a></li>
+                    <li class="img-change" connected-img="aluminum"><a href="">Aluminum Fencing</a></li>
+                    <li class="img-change" connected-img="chain"><a href="">Chain Link Fencing</a></li>
+                    <li class="img-change" connected-img="wood"><a href="">Wood Fencing</a></li>
+                    <li class="img-change" connected-img="railing"><a href="">Custom Railing</a></li>
+                    <li class="img-change" connected-img="outdoor"><a href="">Outdoor Furnishings</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <img src="images/subnav-solutions-swapimage01.png" class="img-responsive margin-75 services-img vinyl" alt="">
+                <img src="images/subnav-sample-photo-02.png" class="img-responsive margin-75 services-img hidden aluminum" alt="">
+                <img src="images/subnav-solutions-swapimage01.png" class="img-responsive margin-75 services-img hidden chain" alt="">
+                <img src="images/subnav-sample-photo-02.png" class="img-responsive margin-75 services-img hidden wood" alt="">
+                <img src="images/subnav-solutions-swapimage01.png" class="img-responsive margin-75 services-img hidden railing" alt="">
+                <img src="images/subnav-sample-photo-02.png" class="img-responsive margin-75 services-img hidden outdoor" alt="">
+                
+              </div>
+              <div class="col-sm-3">
+               <div class="dropdown-sub-wrap">
+                  <h2>Get Quote</h2>
+                  <form action="#" class="services-form">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Phone">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Comments"></textarea>
+                    <button>Submit</button>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+            <div class="col-sm-12 promotion-wrap" style="padding:0;">
+              <div class="promotion">
+                <span>SALE</span> 30% Off Clearance on all ALUMINUM Fence Installations purchased BEFORE January 1st!
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- solutions dropdown-->
+
+    <div class="dropdown-wrapper menu-connected solutions-drp hidden-xs hidden-xs"  id ="solutions-drp" dropdown="solutions-drp" promotion="true">
+      <div class="container dropdown">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-3">
+
+                <div class="dropdown-sub-wrap">
+                  <h2>In this section</h2>
+                  <ul class="dropdown-sub">
+                    <li class="img-change" connected-img="vinyl"><a href="">Pool Fecing</a></li>
+                    <li class="img-change" connected-img="aluminum"><a href="">Privacy Fencing</a></li>
+                    <li class="img-change" connected-img="chain"><a href="">Cutoms Railings</a></li>
+                    <li class="img-change" connected-img="wood"><a href="">Outdoor Furnishings</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <img src="images/subnav-solutions-swapimage01.png" class="img-responsive margin-75 services-img vinyl" alt="">
+                <img src="images/subnav-sample-photo-02.png" class="img-responsive margin-75 services-img hidden aluminum" alt="">
+                <img src="images/subnav-solutions-swapimage01.png" class="img-responsive margin-75 services-img hidden chain" alt="">
+                <img src="images/subnav-sample-photo-02.png" class="img-responsive margin-75 services-img hidden wood" alt="">
+              </div>
+              <div class="col-sm-3">
+               <div class="dropdown-sub-wrap">
+                  <h2>Our Customers</h2>
+                  <ul class="dropdown-sub-right">
+                    <li><a href=""><span>Our Process</span><br>Planning Your Project</a></li>
+                    <span class="divider"></span>
+                    <li><a href=""><span>Why Active Yards Fencing</span> <br>Great quality, great value, tons of options.</a></li>
+                    <span class="divider"></span>
+                    <li><a href=""><span>Our "3 Ways" Program</span><br>We have unique ways you can work with us</a></li>
+                    <span class="divider"></span>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+            <div class="col-sm-12 promotion-wrap" style="padding:0;">
+              <div class="promotion">
+                <span>SALE</span> 30% Off Clearance on all ALUMINUM Fence Installations purchased BEFORE January 1st!
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- gallery dropdown -->
+
+    <div class="dropdown-wrapper menu-connected gallery-drp hidden-xs hidden-xs"  id ="gallery-drp" dropdown="gallery-drp" promotion="true">
+      <div class="container dropdown">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-3 gallery-sub" >
+                <a href="#">
+                  <img src="images/subnav-sample-photo-01.png" class="img-responsive" alt="">
+                  <p>
+                    <span>Pool Photos</span><br>
+                    Over 200 photos of your pool solutions-for great ideas and inspiration.
+                  </p>
+                </a>
+              </div>
+              <div class="col-sm-3 gallery-sub" >
+                <a href="#">
+                  <img src="images/subnav-sample-photo-01.png" class="img-responsive" alt="">
+                  <p>
+                    <span>Pool Photos</span><br>
+                    Over 200 photos of your pool solutions-for great ideas and inspiration.
+                  </p>
+                </a>
+              </div>
+              <div class="col-sm-3 gallery-sub" >
+                <a href="#">
+                  <img src="images/subnav-sample-photo-01.png" class="img-responsive" alt="">
+                  <p>
+                    <span>Pool Photos</span><br>
+                    Over 200 photos of your pool solutions-for great ideas and inspiration.
+                  </p>
+                </a>
+              </div>
+              <div class="col-sm-3">
+                <div class="dropdown-sub-wrap">
+                  <h2>Testimonials</h2>
+                  <ul class="dropdown-sub-right">
+                    <li><a href="">"You guys are awesome! Thank you so much for being so professional, for being on time and for doing such a great job".</a></li>
+                    <li class="divider"></li>
+                    <li><a href="">"You guys are awesome! Thank you so much for being so professional, for being on time and for doing such a great job".</a></li>
+                    <li class="divider"></li>
+                    <h4><a href="">View More Testimonials ></a></h4>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+            <div class="col-sm-12 promotion-wrap" style="padding:0;">
+              <div class="promotion">
+                <span>SALE</span> 30% Off Clearance on all ALUMINUM Fence Installations purchased BEFORE January 1st!
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- resources dropdown -->
+    <div class="dropdown-wrapper menu-connected resources-drp hidden-xs hidden-xs"  id ="resources-drp" dropdown="resources-drp" promotion="true">
+      <div class="container dropdown resources-dropdown">
+        <div class="row">
+          <div class="col-sm-12" style="margin-bottom: 70px;">
+            <div class="row">
+              <div class="col-sm-3" >
+                <div class="dropdown-sub-wrap">
+                  <h2>In this section</h2>
+                  <ul class="dropdown-sub">
+                    <li><a href="">Company Information</a></li>
+                    <li><a href="">Our team</a></li>
+                    <li><a href="">Company History</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-3" >
+                <div class="dropdown-sub-wrap">
+                  <h2>In this section</h2>
+                  <ul class="dropdown-sub">
+                    <li><a href="">Company Information</a></li>
+                    <li><a href="">Our team</a></li>
+                    <li><a href="">Company History</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-3" >
+                <div class="dropdown-sub-wrap">
+                  <h2>In this section</h2>
+                  <ul class="dropdown-sub">
+                    <li><a href="">Company Information</a></li>
+                    <li><a href="">Our team</a></li>
+                    <li><a href="">Company History</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-3">
+               <div class="dropdown-sub-wrap">
+                  <h2>In this section</h2>
+                  <ul class="dropdown-sub">
+                    <li><a href="">Company Information</a></li>
+                    <li><a href="">Our team</a></li>
+                    <li><a href="">Company History</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-sm-12 promotion-wrap" style="padding:0;">
+              <div class="promotion">
+                <span>SALE</span> 30% Off Clearance on all ALUMINUM Fence Installations purchased BEFORE January 1st!
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  	<main class="main">
+
+      <section class="mytable height-75 sliderH">
+
+            <!-- LEFT SIDE -->
+            <div class="table-cell left va-middle">
+                <div class="outer mytable">
+                    <div class="inner table-cell va-middle" style="color:white;">
+                      
+                         <div class="slider">
+                                <!-- <img src="images/hero01.jpg" alt=""> -->
+
+                                <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                            <!-- <ol class="carousel-indicators">
+                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel" data-slide-to="1"></li>
+                                <li data-target="#carousel" data-slide-to="2"></li>
+                            </ol> -->
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="active item">
+                                </div>
+                                <div class="item">
+                                </div>
+                                <div class="item">
+                                </div>
+                            </div>
+                            <!-- Carousel nav -->
+                           <!--  <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+                            <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="overlay overlay-black-60">
+                  <div class="container">
+                       <div class="row">
+                         <div class="col-lg-3"></div>
+                         <div class="col-lg-9">
+                          <div class="caption">
+                            <div class="caption-wrapper">
+                               <h4>Long Island's Premier</h4>
+                             <h2>Fence Company</h2>
+                             <h5>Providing Residential and Commercial Solutions <br/>for over 35 years!</h5>
+                             <a href="#">
+                               <div class="btn-contact">
+                                 Contact Us
+                               </div>
+                             </a>
+                             <a href="">
+                              <div class="btn-learnmore">
+                               Learn More
+                              </div>
+                             </a>
+                            </div>
+                           </div>
+                         </div>
+                       </div>
+                  </div>
+                </div>      
+            </div>
+
+        </section>
+        
+        <div class="container">
+          <div class="row company-info-wrapper">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="img-cluster">
+                <img src="images/photo-cluster-01.png" class="img-responsive" alt="">
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="company-info section-title">
+                <h5>over 35 years experience</h5>
+                <h2>Rose Fence Inc.</h2>
+                  <div class="divider">
+                    <img src="images/divider01.png" alt="">
+                  </div>
+                  <div class="info-para">
+                    <p>
+                      All of our technicians are skilled enough to work on a variety of fencing projects, all with varying budgets, materials, and designs. In fact, our experienced craftsmen always make sure that every job is done right the first time. No matter whether we are installing a fence or performing a repair, we use only the most durable materials that can handle any kind of weather.
+                    </p>
+                  </div>
+                  <div class="signature">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <img src="images/signature.png" alt="">
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <a href="#"><div class="readmore pull-right">Read More</div></a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <section class="mytable height-50 width-50-50">
+
+            <!-- LEFT SIDE -->
+            <div class="table-cell left va-middle" style="background:url('images/bg-popular-services.jpg') no-repeat;background-size:cover">
+              <div class="services">
+                    <div id="p-services" bg-opacity="80">
+                      <div class="p-wrap">
+                        <div class="small">some of our most</div>
+                         <div class="big">Popular Services</div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <!-- //LEFT SIDE -->
+
+            <!-- RIGHT SIDE -->
+            <div class="table-cell right va-middle">
+                <div class="mytable height-50 width-50-50">
+                    <div class="table-cell left va-middle" style="background:url('images/bg-popular-services-link-01.jpg') no-repeat;background-size:cover">
+                        <div class="services">
+                          <a href=""><p class="overlay-black-60"><span>Pool Fences</span></p></a>
+                        </div>
+                    </div>
+                    <div class="table-cell right va-middle" style="background:url('images/bg-popular-services-link-02.jpg') no-repeat;background-size:cover">
+                      <div class="services">
+                          <a href=""><p class="overlay-black-60"><span>Custom Railings</span></p></a>
+                        </div>    
+                    </div>
+                </div> 
+                <div class="mytable height-50 width-50-50">
+                    <div class="table-cell right va-middle" style="background:url('images/bg-popular-services-link-04.jpg') no-repeat;background-size:cover"">
+                      <div class="services">
+                          <a href=""><p class="overlay-black-60"><span>Privacy Fences</span></p></a>
+                      </div>
+                    </div>
+                    <div class="table-cell left va-middle" style="background:url('images/bg-popular-services-link-03.jpg') no-repeat;background-size:cover">
+                        <div class="services">
+                          <a href=""><p class="overlay-black-60"><span>Outdoor Furnishing</span></p></a>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+            <!-- //END RIGHT SIDE -->
+        </section> 
+      
+     <!--  choosing the right series -->
+        <div class="row choose-right">
+          <div class="container">
+              <div class="col-lg-12">
+                <div class="section-title choose-right-wrap">
+                    <h5>Choosing the right series</h5>
+                    <h2>Fencing solutions</h2>
+                      <div class="divider">
+                        <img src="images/divider01.png" alt="">
+                      </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 solution-main">
+                <div class="solution-title row">
+                    <div class="solution-star col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                      <img src="images/icon-stars-3.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="solution-heading col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                      <h2><span>Good </span>Quality Fence</h2>
+                      <h4>Our Haven Series</h4>
+                    </div>
+                </div>
+                <div class="solution-wrapper">
+                  <div class="solution-img">
+                    <img class="img-responsive" src="images/series-good.jpg" alt="">
+                  </div>
+                  <div class="solution-text">
+                    <p>We will add a little info here to give just a bit more detail..but we are really looking for them to click to get more information.</p>
+                  </div>
+                    <a href="#"><div class="view-btn">view all</div></a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 solution-main">
+                <div class="solution-title row">
+                    <div class="solution-star col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                      <img src="images/icon-stars-4.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="solution-heading col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                      <h2><span>Better </span>Quality Fence</h2>
+                      <h4>Our Home Series</h4>
+                    </div>
+                </div>
+                <div class="solution-wrapper">
+                  <div class="solution-img">
+                    <img class="img-responsive" src="images/series-better.jpg" alt="">
+                  </div>
+                  <div class="solution-text">
+                    <p>We will add a little info here to give just a bit more detail..but we are really looking for them to click to get more information.</p>
+                  </div>
+                  <a href="#"><div class="view-btn">view all</div></a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 solution-main">
+                <div class="solution-title row">
+                    <div class="solution-star col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                      <img src="images/icon-stars-5.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="solution-heading col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                      <h2><span>Best </span>Quality Fence</h2>
+                      <h4>Our Harbor Series</h4>
+                    </div>
+                </div>
+                <div class="solution-wrapper">
+                  <div class="solution-img">
+                    <img class="img-responsive" src="images/series-best.jpg" alt="">
+                  </div>
+                  <div class="solution-text">
+                    <p>We will add a little info here to give just a bit more detail..but we are really looking for them to click to get more information.</p>
+                  </div>
+                  <a href="#"><div class="view-btn">view all</div></a>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- cta section -->
+        
+        <div class="row cta-main">
+          <div class="container cta-wrapper">
+          <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+            <img class="cta-img img-responsive" src="images/cta-free-guide.png" alt="">
+            <div class="cta-text">
+              <h5>FREE Instant Download</h5>
+              <h2>Complete Fence Guide</h2>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <div class="regular-btn btn-download">instant download</div>
+          </div>
+        </div>
+        </div>
+    
+        <section class="mytable height-75 width-50-50">
+
+            <!-- LEFT SIDE -->
+             <div class="table-cell right va-middle">
+                <div class="mytable height-50 width-50-50">
+                    <div class="table-cell left va-middle" style="background:url('images/fence1.jpg') no-repeat;background-size:cover">
+                        <div class="portfolio">
+                           <a href="images/fence1.jpg" data-fancybox="group" data-caption="Caption #1"><p><span><i class="fa fa-search" aria-hidden="true"></i></span></p></a>
+                        </div>
+                    </div>
+                  </a>
+                    <div class="table-cell right va-middle" style="background:url('images/fence2.jpg') no-repeat;background-size:cover">
+                      <div class="portfolio">
+                          <a href="images/fence2.jpg" data-fancybox="group" data-caption="Caption #1"><p><span><i class="fa fa-search" aria-hidden="true"></i></span></p></a>
+                        </div>    
+                    </div>
+                </div> 
+                <div class="mytable height-50 width-50-50">
+                    <div class="table-cell right va-middle" style="background:url('images/fence3.jpg') no-repeat;background-size:cover"">
+                      <div class="portfolio">
+                          <a href="images/fence3.jpg" data-fancybox="group" data-caption="Caption #1"><p><span><i class="fa fa-search" aria-hidden="true"></i></span></p></a>
+                      </div>
+                    </div>
+                    <div class="table-cell left va-middle" style="background:url('images/fence4.jpg') no-repeat;background-size:cover">
+                        <div class="portfolio">
+                          <a href="images/fence4.jpg" data-fancybox="group" data-caption="Caption #1"><p><span><i class="fa fa-search" aria-hidden="true"></i></span></p></a>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+            <!-- //LEFT SIDE -->
+
+            <!-- RIGHT SIDE -->
+            <div class="table-cell right va-middle">
+                <div class="mytable height-50 width-50-50">
+                    <div class="table-cell left va-middle" style="background:url('images/fence5.jpg') no-repeat;background-size:cover">
+                        <div class="portfolio">
+                          <a href="images/fence5.jpg" data-fancybox="group" data-caption="Caption #1"><p><span><i class="fa fa-search" aria-hidden="true"></i></span></p></a>
+                        </div>
+                    </div>
+                    <div class="table-cell right va-middle" style="background:url('images/fence6.jpg') no-repeat;background-size:cover">
+                      <div class="portfolio">
+                          <a href="images/fence6.jpg" data-fancybox="group" data-caption="Caption #1"><p><span><i class="fa fa-search" aria-hidden="true"></i></span></p></a>
+                        </div>    
+                    </div>
+                </div> 
+                <div class="mytable height-50 width-50-50">
+                    <div class="table-cell right va-middle" style="background:url('images/fence7.jpg') no-repeat;background-size:cover"">
+                      <div class="portfolio">
+                          <a href="images/fence7.jpg" data-fancybox="group" data-caption="Caption #1"><p><span><i class="fa fa-search" aria-hidden="true"></i></span></p></a>
+                      </div>
+                    </div>
+                    <div class="table-cell left va-middle" style="background:url('images/fence8.jpg') no-repeat;background-size:cover">
+                        <div class="portfolio">
+                         <a href="images/fence8.jpg" data-fancybox="group" data-caption="Caption #1"><p><span><i class="fa fa-search" aria-hidden="true"></i></span></p></a>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+            <!-- //END RIGHT SIDE -->
+        </section> 
+
+
+        <!-- testomonial section -->
+
+        <div class="row testomonial">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5"><h5><span>Client</span> Testomonial</h5></div>
+              <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                <p>Here are some words our clients have said about our service, recently. We are proud of the work we do!</p>
+                <div class="arrows">
+                  <i id="left-a" class="fa fa-chevron-left owl-arrows" aria-hidden="true"></i>
+                  <i id="right-a" class="fa fa-chevron-right owl-arrows" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
+              <div class="owl-carousel">
+                  <div class="testomonial-content">
+                    <div class="testomonial-quote"><img src="images/icon-quote.png" alt=""></div>
+                    
+                    <div class="client-writeup">
+                      <div class="short-writeup">
+                        Awsome Service, totally reliable
+                      </div>
+                      <div class="long-writeup">
+                        <p>
+                          You guys are amazing. We have used your serice 4 times and you deliver each time. Consider us a lifelong customer. We will never go anywhere else!
+                        </p>
+                      </div>
+
+                      <div class="client-name">
+                        Louise William
+                      </div>
+                      <div class="rating">
+                        <img src="images/icon-solid-stars-5.png" alt="">
+                      </div>
+                      <div class="client-signature">
+                        <img src="images/temp-signature01.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="testomonial-content">
+                    <div class="testomonial-quote"><img src="images/icon-quote.png" alt=""></div>
+                    
+                    <div class="client-writeup">
+                      <div class="short-writeup">
+                        Awsome Service, totally reliable
+                      </div>
+                      <div class="long-writeup">
+                        <p>
+                          You guys are amazing. We have used your serice 4 times and you deliver each time. Consider us a lifelong customer. We will never go anywhere else!
+                        </p>
+                      </div>
+
+                      <div class="client-name">
+                        Louise William
+                      </div>
+                      <div class="rating">
+                        <img src="images/icon-solid-stars-5.png" alt="">
+                      </div>
+                      <div class="client-signature">
+                        <img src="images/temp-signature02.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="testomonial-content">
+                    <div class="testomonial-quote"><img src="images/icon-quote.png" alt=""></div>
+                    
+                    <div class="client-writeup">
+                      <div class="short-writeup">
+                        Awsome Service, totally reliable
+                      </div>
+                      <div class="long-writeup">
+                        <p>
+                          You guys are amazing. We have used your serice 4 times and you deliver each time. Consider us a lifelong customer. We will never go anywhere else!
+                        </p>
+                      </div>
+
+                      <div class="client-name">
+                        Louise William
+                      </div>
+                      <div class="rating">
+                        <img src="images/icon-solid-stars-5.png" alt="">
+                      </div>
+                      <div class="client-signature">
+                        <img src="images/temp-signature01.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="testomonial-content">
+                    <div class="testomonial-quote"><img src="images/icon-quote.png" alt=""></div>
+                    
+                    <div class="client-writeup">
+                      <div class="short-writeup">
+                        Awsome Service, totally reliable
+                      </div>
+                      <div class="long-writeup">
+                        <p>
+                          You guys are amazing. We have used your serice 4 times and you deliver each time. Consider us a lifelong customer. We will never go anywhere else!
+                        </p>
+                      </div>
+
+                      <div class="client-name">
+                        Louise William
+                      </div>
+                      <div class="rating">
+                        <img src="images/icon-solid-stars-5.png" alt="">
+                      </div>
+                      <div class="client-signature">
+                        <img src="images/temp-signature02.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- get a quote section -->
+
+        
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <img class="img-responsive" src="images/bg-quote.jpg" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 contact-us-wrap">
+              <div class="section-title">
+                <h5>contact us today</h5>
+                <h2>Get A Quote</h2>
+                  <div class="divider">
+                    <img src="images/divider01.png" alt="">
+                  </div>
+                  <p>
+                    Contact us now to speak with our friendly and professional staff about a free estimate on your next residential or commercial project. We're known for our custom work that meets the needs of all our customers.
+                  </p>
+              </div>
+              <form action="" class="quote-form">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><input type="text" placeholder="First Name*" id="fname" class="form-content"></div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><input type="text" placeholder="Last Name*" id="lname" class="form-content"></div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><input type="text" placeholder="Email(Optional)" id="email" class="form-content"></div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><input type="text" placeholder="Phone*" id="phone" class="form-content"></div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <select name="street-address" id="street-address" class="form-content">
+                      <option value="" disabled selected>Street Address(Required)</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><input type="text" placeholder="City*" id="city" class="form-content"></div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><input type="text" placeholder="Zip*" id="zip" class="form-content"></div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <select name="services" id="services" class="form-content">
+                      <option value="" disabled selected>Services</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <input type="text" placeholder="How can we help you?" class="form-content">
+                  </div>
+                  <div class="regular-btn contact-btn">Submit</div>
+                </div>
+              </form>
+            </div> 
+          </div>
+  	</main>
+
+  	<footer class="footer">
+  	</footer>
+
+  	<!-- js library -->
+  	<script type="text/javascript" src="js/library.min.js"></script>
+
+  	<!-- scrollbar js -->
+  	<script type="text/javascript" src="js/scrollbar.js"></script>
+
+  	<!-- bootstrap js -->
+  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  	<!-- Custom Js -->
+  	<script type="text/javascript" src="js/custom.js"></script>
+    
+
+</body>
+</html>
